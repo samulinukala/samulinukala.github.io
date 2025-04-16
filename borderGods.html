@@ -1,0 +1,98 @@
+<!doctype= html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Samuli Nukala">
+    <link rel="stylesheet" href="css/stylesP.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border gods</title>
+</head>
+
+<body>
+    <div id="pagewrap">
+        <div id="navbar">
+            <a href="index.html" id="frontpage">
+                <p id="lT4">Frontpage </p>
+            </a>
+            <a href="summary.html" id="Summary">
+                <p id="lT2"> Projects </p>
+            </a>
+            <a href="test.html" id="fakelink">
+                <p id="lT1"> Project list
+                </p>
+            </a>
+        </div>
+        <div id="contentwrap">
+            <div id="videowrap">
+               <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/YW-xAixWqgc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div id="c1">
+                <h1> Description</h1>
+                <p> The game was developed for Rajamuseo, located in Imatra. Rajamuseo is a museum about border control in Finland. The game teaches children about border control and the importance of taking care of their documents during border crossings. The game has some fantasy elements; gods from all kinds of regions around the world appear, trying to get to Finland, and the player has to check their documents. The game will be part of the exhibition and hopefully will be enjoyed by many people. The game will be part of an exhibition and act as a small experience that the player plays once. The development team consisted of 5 game designers and me as the coder. One of the designers, Gustavo Moreira, knew how to code, and I worked closely with him during the development. During the project, he started to code as well to help me, and we learned some things from each other. UI was the responsibility of Ann Dang. Emma Seppälä drew the characters. Kathy Hauer drew emblems. Justyna Neuvonen was the project leader.
+            </div>
+            <div id="p1">
+                <img id="pic1" src="img/bg1.png">
+            </div>
+            <div id="p2">
+                <img id="pic2" src="img/bg2.png">
+            </div>
+            <div id="c2">
+                <h1> Features </h1>
+                <p>  
+                   In the game, players check passports to ensure that the individuals carrying them are correct.
+Players must mark incorrect details on the passport with checkmarks.
+Correct answers are displayed on the right side of the screen via a computer in the game.
+Discrepancies can involve various aspects, including the photo on the passport, the emblem, the name, the age, or the person possessing the passport. It was fascinating to observe how players discovered mistakes. I had to balance the game to introduce more mistakes at once, making it easier for players to notice something was amiss.
+
+The game includes a tutorial that instructs players on how to play and offers support for four languages: Finnish, Swedish, English, and Russian.
+Furthermore, the game incorporates a rating system that rewards speed and precision, featuring three ranks: Parrot, Wolf, and Bear Cub. This system is designed to provide players with an enjoyable way to assess their performance.
+Each player has a mere two minutes to inspect the passports, which may seem brief, but with the combo system, players can achieve an incredible score
+               
+            </div> 
+            
+            <div id="c3">
+                <h1> Challenges</h1>
+                <p> The major problems were mostly related to things that were cut. The game originally had a gamemode to create your own passports and the game would add them to the game and when you complete the game would record your score. this was difficult to get working and it worked by saving the passportdata to json file. The game could also email a picture of this passport in the early stage. The game also had a scoreboard that saved player scores but this was also cut. These things were cut because during testing the game was confusing and disoriented the players. So the game was made easier to understand by cutting features. I designed the tutorial to the game. It was quite intresting to do. I belive remooving those features were good for game because the player might want to play the game many times but this game is intended to be played once when the player goes through the museum exhibition. The score system was replaced with a rating system . </p>
+            </div>
+            <div id="c4">
+                <h1> Self reflection </h1>
+                <p> 
+               Designers made the design choices and always asked for my opinion, even if I felt a bit underqualified.
+I did give them some suggestions and made some design decisions on my own while informing them; my decisions were mostly related to gameplay. I learned a lot about how designers think and how games should be designed, although mostly I cannot justify my thinking; it is mostly just instinct or common-sense thinking.
+I felt honored to be part of the project, even though when I started, I was so inexperienced, only knowing the basics of coding.
+This project has solidified my understanding of how to code and made me much more knowledgeable.
+My main takeaway from this project was game development works very differently in practice. Before this project, I had only worked in game jams and school projects, but those lacked the designer element and real-world considerations like the audience, the environment the game is played in, and the game's fun value.
+             </p>
+            </div>
+            <div id="cleft">
+               <img src="img/rank%20calc.png">
+                <p>
+                    <br>
+                    <br>
+                </p>
+                 <h1> code example rank calculator </h1>
+               <p> One of my favorite things that I did for this project was creating a script that determined if the player's decisions were wrong. It could even provide suggestions on what the player should focus on more. The script is quite concise and could be improved by removing unnecessary code. Since the game was part of a museum exhibition, it needed to support multiple languages. Thus, it decides what language rank to display based on the language chosen at the main menu. It also makes stars appear on the main menu based on the player's score. </p>
+                
+            </div>
+          
+            <div id="cright">
+             <img src="img/bordergods%20code%20.new%20game%20manager.png">
+                <p>
+                    <br>
+                    <br>
+                </p>
+                 <h1> code example newGameManager </h1>
+                <p>
+                During the project, this game manager script grew quite lengthy; by the end, it had reached 500 lines. In the picture, you can see the variables it contains. The game manager had logic for creating combos when there were multiple correct choices. It also displayed in the inspector whether the decisions were correct and had logic for handling the sound and timer for the game. Developing the logic for correct and incorrect decisions was quite enjoyable, as the script made the background fade and displayed a sprite of a bear. It achieved the background fading effect using masking. Additionally, it recorded the player's actions, allowing determination of what the player did wrong, and their rank could be calculated by a different script.
+                </p>
+                  <p>
+                    <br>
+                    <br>
+                </p>
+            </div>
+            
+            
+        </div>
+    </div>
+</body>

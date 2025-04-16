@@ -1,0 +1,80 @@
+<!doctype= html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Samuli Nukala">
+    <link rel="stylesheet" href="css/stylesP.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zron Lightbike Races</title>
+</head>
+
+<body>
+    <div id="pagewrap">
+        <div id="navbar">
+            <a href="index.html" id="frontpage">
+                <p id="lT4">Frontpage </p>
+            </a>
+            <a href="summary.html" id="Summary">
+                <p id="lT2"> Projects summary</p>
+            </a>
+            <a href="test.html" id="fakelink">
+                <p id="lT1"> Project list
+                </p>
+            </a>
+        </div>
+        <div id="contentwrap">
+            <div id="videowrap">
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/gMf_PTgiFLo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div id="c1">
+                <h1> Description</h1>
+                <p> Game made during XAMK gamejam 21. The theme was arcade so I thought of remaking an old arcade game called Tron. I had some kind of an idea what Tron was. I thought about the movie and remembered it had the bikes that left trails and when
+                    the bike hit the trail it died. I made the game according to that idea. I did take an another coder with me to make the game since he did not have a team and wanted to find one. I mostly said what we should do. My companion did not
+                    really tell his opinions. I did try to get his opinion, but I might have said my own thoughts too sharply. My companion was in charge of making the AI and collisions between player and enemy trails. He mostly worked on that and in
+                    the end helped me debug some code. He was an experienced coder who had coded for at least 5 years.
+                </p>
+            </div>
+            <div id="p1">
+                <img id="pic1" src="img/4nM+C7.png">
+            </div>
+            <div id="p2">
+                <img id="pic2" src="img/logTXY.png">
+            </div>
+            <div id="c2">
+                <h1> Features </h1>
+                <p> In the game you drive a bike and try to kill your enemy by having him collide with your trail. You change the direction your bike with wasd you can't turn 180 degrees since you would go over your own trail. There are three modes in the
+                    game. Arcade, frenzy and multiplayer. In arcade mode you have three lives represented by coins on the screen. During your three lives you collect cumulative score that is shown in the end as well as your highest score for the three
+                    tries. In the frenzy mode you try to survive as long as possible when you die your score is shown in the end. Multiplayer is local multiplayer game where you fight against another player and the game will show who won the game. In
+                    the game there are pause menus, score screens and adjustable sound. The enemy AI is the most advanced thing in the game I did not make it and don't understand how it works. The AI saves cordinates and follows player cordinates to player.
+                    I understand that much but everything else is murky.</p>
+            </div>
+            <div id="c3">
+                <h1> Challenges</h1>
+                <p> I was responcible for making levels, menus, modes, score tracking, audio logic, powerups and spawning. I had numerous problems because towards the end of the gamejam it was easier making new scripts rather than try to retrofit existing
+                    scripts into other modes. I had some trouble making the sound be played when the player dies because I had not before made sound options be adjustable. I also had not made pause menus and also needed time to get them working. My companion
+                    had trouble making the AI and collisions work so he mostly did that. Making the sprite turn with the player created problems in the multiplayer mode because the script could identify only one player I made the sprite turner script
+                    have bool for being player 2. So it would look for player 2 instead of player 1. Power ups also had problems working in other modes so that had to be fixed. Each of the modes had to have a different score calculation method. Arcade
+                    mode has int kills, frenzy mode has float timer, multiplayer has bool winner. When building the game the UI broke because the UI canvas did not scale with the screen I solved that but I had to remove the edges because I could not get
+                    the borders to show on all resolution correctly so they are outside the screen. </p>
+            </div>
+            <div id="c4">
+                <h1> Self reflection </h1>
+                <p> I think we did our best making the game but there is always room for improvment. As a team we worked almost seperetly most of the time but we talked little bit and looked how the game had progressed and told what we had done but no chit
+                    chat. Game quality is okay for a game jam game. It could use some polish and debugging. I am quite happy with the result of the game jam. We did not win but we learned a lot and had fun. My companion was little bit bored since he only
+                    worked on the AI and collisions.
+                </p>
+            </div>
+            <div id="c5">
+                <h1> Link to the game download. </h1>
+                <br>
+                <a href="https://samulinukala.itch.io/zron-lightbike-races"> Game itch.io page link</a>
+            </div>
+            <div id="c6">
+                <h1> Credits </h1>
+                <p> Music is made by Bensound. The Tron bike sprite was made by iiwiobR. Coin sprite was made by Scott Ward. My coding companion was Arsenii Panov.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>

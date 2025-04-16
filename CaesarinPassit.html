@@ -1,0 +1,81 @@
+<!doctype= html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Samuli Nukala">
+    <link rel="stylesheet" href="css/stylesP.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caesarin passit</title>
+</head>
+
+<body>
+    <div id="pagewrap">
+        <div id="navbar">
+            <a href="index.html" id="frontpage">
+                <p id="lT4">Frontpage </p>
+            </a>
+            <a href="summary.html" id="Summary">
+                <p id="lT2"> Projects </p>
+            </a>
+            <a href="test.html" id="fakelink">
+                <p id="lT1"> Project list
+                </p>
+            </a>
+        </div>
+        <div id="contentwrap">
+            <div id="videowrap">
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/x3UN33GUNFI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div id="c1">
+                <h1> Description</h1>
+                <p> This game was a part of my internship at Rajamuseo foundation. In the game, the player makes a passport and customizes it step by step and at the end prints it. From a printer. My role was as a lead coder. There was an another gamedesigner that also helped with coding the game. </p>
+            </div>
+            <div id="p1">
+                <img id="pic1" src="img/cp1.png">
+            </div>
+            <div id="p2">
+                <img id="pic2" src="img/cp2.png">
+            </div>
+            <div id="c2">
+                <h1> Features </h1>
+                <p> In the game, the player can input their name and customize the background, emblem, and picture on the passport. The player can take a selfie for the picture on the passport. The game runs on a chrome kiosk to prevent the players from tampering with it. The passport can be printed. The game looks weird in the video because it is designed for a specific computer that is in the museum.</p>
+            </div>
+            <div id="c3">
+                <h1> Challenges</h1>
+                <p> Main problems came from the fact that I had to have the game working on a kiosk while being able to print and have access to the camera to take a picture that could be put on the passport.  My first approach was to try to make a UWP app which would run in the Windows 11 pro kiosk-mode, but the issue was that I could not get the printing working in kiosk mode. Printing needed to have a separate window for the selection, but kiosk mode would not allow that. I searched many approaches, but in the end it became clear that Windows kiosk mode would not work with the printing in Unity. The difficulty came down to the fact that Unity did not support the correct DLL, and I could not call windows to print a file of the passport. After getting stuck, I decided to search for a different approach. I ported the game to Unity WebGL. I redid the printing and picture taking since the WebGL is different compared to UWP app. I solved the problem with printing by calling the browser to print the page and adjusting the values manually on the browser to get it to print the page correctly. This approach was fine since the game will be installed on 4 laptops at the museum, and I was running out of time since the game needed to be released in the summer. I did the kiosk set up with chrome kiosk mode, which allowed the game to work and be reasonably secure. I also needed to rework the camera to take a picture of the player and put that picture to the passport in the game. I found out how I would have to start making my own JavaScript library to interact with the browser from Unity and had never done a code library for anything and had not coded anything in JavaScript. I decided to use Unity asset store component. I also had to find a way to host the file locally with https, so the browser would allow the camera to take pictures. I ended up finding an app called servez that did this.  </p>
+            </div>
+            <div id="c4">
+                <h1> Self reflection </h1>
+                <p> I think I surpassed myself and became a much better developer. During the project, I faced my biggest problems until now. I was stuck on one of them for a month. I went through hundreds of different forum posts and ended up finding the solution that was right for me. There were many solutions that would have worked quite well for different games, but mine had a quite restrictive implementation that I had to follow. I feel like it is a miracle that I managed to get the game working, or maybe I am just lucky. During the project I had to learn many things about coding that I didn't think about before like DLL-files, compatibilities, group policies, commanding windows, file handling and limits of different game builds. I was left with a week of extra time, so the deadline came quite close. </p>
+            </div>
+             <div id="cleft">
+               <img src="img/caesarinpassit%20code%20pictaker.png">
+                <p>
+                    <br>
+                    <br>
+                </p>
+                 <h1> code example pictaker </h1>
+               <p> One of my proudest things that I did for this project was making a script that took a picture of the player passport. it would save the picture of the passport to the computer and then ask windows to print the picture. it was not a perfect system. it was extremely annoiying to calibrate it. To calibrate it you would have to calculate the dimensions of the object and through trial and error make the red´nder texture right sized. since the render texture could not be the same sized as the capture area because it would be inaccurate. getting this to run in kiosk and not have it show any dialogue was the hardest part.</p>
+                
+            </div>
+          
+            <div id="cright">
+             <img src="img/casesarin%20passit%20code%20dialogue.png">
+                <p>
+                    <br>
+                    <br>
+                </p>
+                 <h1> code example dialogueSystem </h1>
+                <p>
+                This was by far the easiest idea to come up with. This script was in charge of changing passport creation screens. It changed screens by having UI canvas that it enabled and closed the other canvas that was already on. It also had a screensaver feature because the game will be in a museum and be on all the time. it was originally supposed to take care of translating screens but another script did it by the end.  
+                </p>
+                  <p>
+                    <br>
+                    <br>
+                </p>
+            </div>
+           
+        </div>
+    </div>
+</body>

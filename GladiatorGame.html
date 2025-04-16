@@ -1,0 +1,99 @@
+<!doctype= html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Samuli Nukala">
+    <link rel="stylesheet" href="css/stylesP.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gladiator game</title>
+</head>
+
+<body>
+    <div id="pagewrap">
+        <div id="navbar">
+            <a href="index.html" id="frontpage">
+                <p id="lT4">Frontpage </p>
+            </a>
+            <a href="summary.html" id="Summary">
+                <p id="lT2"> Projects </p>
+            </a>
+            <a href="test.html" id="fakelink">
+                <p id="lT1"> Project list
+                </p>
+            </a>
+        </div>
+        <div id="contentwrap">
+            <div id="videowrap">
+                 <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/qmS9u6luRuY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div id="c1">
+                <h1> Description</h1>
+                <p>This is a game where you battle against waves of enemies. After every 200 kills, a break occurs. During these intervals, players can collect colored balls that restore health and mana based on the ball's color. Purple balls give mana, and red balls give health.
+
+The game is set in ancient Roman times, where you play as a gladiator fighting in the arena until you meet your demise. One of the most effective strategies I discovered involved moving in a square pattern, luring the enemies to form a line towards the player. This allowed me to eliminate hundreds of enemies by launching a ball straight through them. When running low on mana, I found the best strategy was to run with the sword drawn to the side, cutting through the queues of enemies while spamming the sword button.
+
+One of the most extensively developed aspects of the game was the ability system.
+
+
+            </div>
+            <div id="p1">
+                <img id="pic1" src="img/gladiator%201.png">
+            </div>
+            <div id="p2">
+                <img id="pic2" src="img/gladiator%203.png">
+            </div>
+            <div id="c2">
+                <h1> Features </h1>
+                <p> The player has a magic ability that creates a ball that swiftly moves in the direction it was cast. This projectile has different colored circles around it to display its damage radii. The ball deals area-of-effect damage to enemies and can instantly eliminate them upon direct hits.
+
+There are various enemy levels that randomly spawn from the gates. Higher-level enemies are surrounded by damaging balls that encircle them, posing a threat to the player. These balls move outward in a circular pattern from the enemy.
+
+To enhance engagement, traps are scattered throughout the arena. These traps serve to instantly eliminate enemies and inflict damage upon the player. The intention behind adding traps was to increase the game's intensity, requiring players to pay attention to their surroundings.
+
+In terms of gameplay objectives, the player doesn't have a specific goal. Instead, their aim is to survive for as long as possible while accumulating the highest score they can</p>
+            </div>
+            <div id="c3">
+                <h1> Challenges</h1>
+                <p> This game marked one of my initial ventures into game development. However, it currently remains abandoned, primarily due to the challenges inherent in solo game development. I find myself less productive when working alone, lacking the positive pressure that comes from collaborating with other developers.
+
+Creating the enemy AI proved to be a formidable task, as I had no prior experience in AI development. I encountered numerous issues due to my lack of previous AI work. One potential improvement would have been the implementation of a grid system to streamline enemy movement and detection within the same square.
+
+The sword mechanics also presented challenges, given my limited experience in designing such elements. The sword operated by triggering actions that caused damage to the enemies. The primary challenge here stemmed from ensuring that the sword didn't remain active indefinitely and that multiple triggers could not be simultaneously activated </p>
+            </div>
+                                                                           
+            <div id="c4">
+                <h1> Self reflection </h1>
+                <p> The game was not abandoned entirely. I have started developing a game called 'Defflight.' This game shares many similarities with the previous one, but this time, I have another developer on board, so it will hopefully be released on Google Play. I have made multiple efforts to revive the development. </p>
+            </div>
+           
+           
+             <div id="cleft">
+               <img src="img/gladiator%20code%20screenshot.png">
+                <p>
+                    <br>
+                    <br>
+                </p>
+                 <h1> Code example enemy ai </h1>
+               <p> This was quite simply the hardest part of the game. The enemies always overlapped, and I tried many things to prevent them from doing so. I attempted to make them detect other enemies and added a stuck timer that would teleport the enemy, but nothing worked. In hindsight, making them move with a Rigidbody and adding a collider would have solved the issue quite easily. </p>
+                
+            </div>
+          
+            <div id="cright">
+             <img src="img/gladiator%20code%20screenhot%20special%20shoot%20ability.png">
+                <p>
+                    <br>
+                    <br>
+                </p>
+                 <h1> Code example player shootability </h1> 
+                <p> The original idea was to have an ability that could create balls that would fly around, and the player could control them when they were launched and explode them for instant damage. However, it was too complicated to control and would have distracted too much from the combat to manage slow projectiles. As a result, it was changed so that the player simply shoots the balls. The script limits shooting by mana; if the player has no mana, they can't shoot. Mana is regenerated and gained by killing enemies in melee.
+                              
+                </p>
+                  <p>
+                    <br>
+                    <br>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>

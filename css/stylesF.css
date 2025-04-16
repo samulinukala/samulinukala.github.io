@@ -1,0 +1,87 @@
+a{color: #32e0c4;}
+@media only screen and (min-width: 992px){
+    #socialLink{ vertical-align: middle;}
+    html,body,h1{margin: 0%;}
+    #pagewrap{width: 100%; height: 100%; background-color:  007377;}
+    #navbar{width: 100%; height: 7%; background-color:  007377;}
+    #fakelink{ color: black; width: 20%; height: 96%;    background-color: #32e0c4; text-align: center; float: left;border: solid black 1px;}
+    #lT1{text-align: center; color: black; font-size: 120%;}
+    #Summary{color: #32e0c4; width: 20%; height: 96%; background-color: #212121;  float: left; border: solid #eeeeee 1px; text-align: center;}
+    #lT2{text-align: center;color: #32e0c4; font-size: 120%;}
+    #testForm{color: #32e0c4; width: 20%; height: 96%; background-color: #212121; text-align: center; float: left;border: solid #eeeeee 1px;}
+    #lT4{text-align: center;color: #32e0c4;font-size: 120%;}
+    #content{width: 100%; height: 93%; background-color: #212121}
+    .Style2{background-color: #007377; color: #212121;}
+    .Style1{background-color: #212121; color: #007377;  }
+    h1{ color: #007377;}
+    #c1{width: 49%;height: 50%; float: left; }
+    #c2{width: 49%;height: 50%;float: right; }
+    #c3{width: 100%;height: 40%; float: left; margin-top: 10%; }
+}
+@media only screen and (max-width: 991px) and (min-width: 600px){
+    #socialLink{ vertical-align: middle; }
+    html,body,h1{margin: 0%;background-color:  007377;}
+    #pagewrap{width: 100%; height: 100%;}
+    #navbar{width: 100%; height: 7%; background-color:  007377;}
+    #fakelink{ color: black; width: 20%; height: 96%;    background-color: #32e0c4; text-align: center; float: left;border: solid black 1px;}
+    #lT1{text-align: center; color: black;}
+    #Summary{color: #007377; width: 20%; height: 96%; background-color: #212121;  float: left; border: solid #eeeeee 1px; text-align: center;}
+    #lT2{text-align: center;color: #32e0c4; }
+    #flappy{color: #007377; width: 20%; height: 96%; background-color: #212121; text-align: center; float: left;border: solid #eeeeee 1px;}
+    #lT3{text-align: center;color: #32e0c4;}
+    #testForm{color: #007377; width: 20%; height: 96%; background-color: #212121; text-align: center; float: left;border: solid #eeeeee 1px;}
+    #lT4{text-align: center;color: #32e0c4;}
+    #content{width: 100%; height: 93%; background-color: #212121}
+    .Style2{background-color: #007377; color: #212121;}
+    .Style1{background-color: #212121; color: #007377;  }
+    h1{ color: #007377;;}
+    #c1{width: 49%;height: 30%; float: left; background-color:  007377;}
+    #c2{width: 49%;height: 30%;float: right;background-color:  007377; }
+    #c3{width: 50%;height: 50%; float: left; margin-top: 10%;background-color:  007377; }
+    a{color: #32e0c4;}
+}
+@media only screen and (max-width: 600px) and (min-width: 312px){
+    #socialLink{ vertical-align: middle ;}
+   html,body,h1{margin: 0%; background-color:  007377;}
+    #pagewrap{width: 100%; height: 100%;}
+    #navbar{width: 100%; height: 7%; background-color:  007377;}
+    #fakelink{ color: black; width: 20%; height: 96%;    background-color: #32e0c4; text-align: center; float: left;border: solid black 1px; min-width: 75px}
+    #lT1{text-align: center; color: black;}
+    #Summary{color: #007377; width: 20%; height: 96%; background-color: #212121;  float: left; border: solid #eeeeee 1px; text-align: center; min-width: 75px}
+    #lT2{text-align: center;color: #32e0c4; }
+    #flappy{color: #007377; width: 15%; height: 96%; background-color: #212121; text-align: center; float: left;border: solid #eeeeee 1px; min-width: 75px}
+    #lT3{text-align: center;color: #32e0c4; min-width: 75px}
+    #testForm{color: #007377; width: 20%; height: 96%; background-color: #212121; text-align: center; float: left;border: solid #eeeeee 1px; min-width: 75px}
+    #lT4{text-align: center;color: #32e0c4; min-width: 75px}
+    #content{width: 100%; height: 93%; background-color: #212121}
+    .Style2{background-color: #007377; color: #212121;}
+    .Style1{background-color: #212121; color: #007377;  }
+    h1{ color: #007377;}
+    #c1{width: 99%;height: 32%; float: left;background-color:  007377; }
+    #c2{width: 99%;height: 32%;float: right;background-color:  007377; }
+    #c3{width: 100%;height: 50%; float: left; margin-top: 10%; background-color:  007377;}
+    a{color: #32e0c4;}
+}
+@media only screen and (max-width: 311px) {
+    #socialLink{ vertical-align: middle ;}
+   html,body,h1{margin: 0%; background-color:   007377;}
+    #pagewrap{width: 100%; height: 100%;}
+    #navbar{width: 100%; height: 7%; background-color:  007377;}
+    #fakelink{ color: black; width: 20%; height: 96%;    background-color: #32e0c4; text-align: center; float: left;border: solid black 1px; }
+    #lT1{text-align: center; color: black; font-size: 80%}
+    #Summary{color: #007377; width: 20%; height: 96%; background-color: #212121;  float: left; border: solid #eeeeee 1px; text-align: center; }
+    #lT2{text-align: center;color: #32e0c4; font-size: 80%}
+    #flappy{color: #007377; width: 15%; height: 96%; background-color: #212121; text-align: center; float: left;border: solid #eeeeee 1px; min-width: 75px;}
+    #lT3{text-align: center;color: #32e0c4; font-size: 80%}
+    #testForm{color: #007377; width: 20%; height: 96%; background-color: #212121; text-align: center; float: left;border: solid #eeeeee 1px; }
+    #lT4{text-align: center;color: #32e0c4; font-size: 80%}
+    #content{width: 100%; height: 93%; background-color: #212121}
+    .Style2{background-color: #007377; color: #212121;}
+    .Style1{background-color: #212121; color: #007377;  }
+    h1{ color: #007377; font-size: 90%}
+    #c1{width: 100%;height: 35%; float: left; background-color:  007377;}
+    #c2{width: 100%;height: 35%;;float: right; background-color:  007377;}
+    #c3{width: 100%;height: 20%; float: left; margin-top: 10%; background-color:  007377;}
+    a{color: #32e0c4;}
+}
+

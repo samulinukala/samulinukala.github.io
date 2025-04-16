@@ -1,0 +1,391 @@
+.aProjects {
+    float: left;
+    margin-left: 2%;
+}
+
+@media only screen and (min-width: 992px) {
+    html,
+    body,
+    h1 {
+        margin: 0%;
+    }
+    #pagewrap {
+        width: 100%;
+        height: 100%;
+    }
+    #navbar {
+        width: 100%;
+        height: 7%;
+        background-color: #007377;
+    }
+    #fakelink {
+        color: black;
+        width: 20%;
+        height: 96%;
+        background-color: #32e0c4;
+        text-align: center;
+        float: left;
+        border: solid black 1px;
+    }
+    #lT1 {
+        text-align: center;
+        color: #212121;
+        font-size: 120%;
+    }
+    #Summary {
+        color: #007377;
+        width: 20%;
+        height: 96%;
+        background-color: #212121;
+        float: left;
+        border: solid #eeeeee 1px;
+        text-align: center;
+    }
+    #lT2 {
+        text-align: center;
+        color: #32e0c4;
+        font-size: 120%;
+    }
+    a {
+        color: #32e0c4;
+    }
+    #frontpage {
+        color: #007377;
+        width: 20%;
+        height: 96%;
+        background-color: #212121;
+        text-align: center;
+        float: left;
+        border: solid #eeeeee 1px;
+    }
+    #lT4 {
+        text-align: center;
+        color: #32e0c4;
+        font-size: 120%;
+    }
+    #contentwrap {
+        width: 100%;
+        height: 93%;
+        background-color: #212121;
+    }
+    #inputwrap {
+        width: 100%;
+        height: 30%;
+        text-align: center;
+        background-color: #212121;
+    }
+    h1 {
+        color: #007377;
+    }
+    #i1 {
+        text-align: center;
+        background-color: #007377;
+        color: #32e0c4;
+    }
+    #i2 {
+        text-align: center;
+        background-color: #007377;
+    }
+    #i3 {
+        text-align: center;
+        background-color: #007377;
+        color: #32e0c4;
+    }
+     ::placeholder {
+        color: #32e0c4;
+    }
+    a {
+        color: #32e0c4;
+    }
+    .aProjects {
+        float: left;
+    }
+    .pAText {
+        float: left;
+    }
+}
+
+@media only screen and (max-width: 991px) and (min-width: 600px) {
+    html,
+    body,
+    h1 {
+        margin: 0%;
+    }
+    #pagewrap {
+        width: 100%;
+        height: 100%;
+    }
+    #navbar {
+        width: 100%;
+        height: 7%;
+        background-color: #007377;
+    }
+    #fakelink {
+        color: black;
+        width: 20%;
+        height: 96%;
+        background-color: #32e0c4;
+        text-align: center;
+        float: left;
+        border: solid black 1px;
+    }
+    #lT1 {
+        text-align: center;
+        color: #212121;
+    }
+    #Summary {
+        color: #007377;
+        width: 20%;
+        height: 96%;
+        background-color: #212121;
+        float: left;
+        border: solid #eeeeee 1px;
+        text-align: center;
+    }
+    #lT2 {
+        text-align: center;
+        color: #32e0c4;
+    }
+    #frontpage {
+        color: #007377;
+        width: 20%;
+        height: 96%;
+        background-color: #212121;
+        text-align: center;
+        float: left;
+        border: solid #eeeeee 1px;
+    }
+    #lT4 {
+        text-align: center;
+        color: #32e0c4;
+    }
+    #contentwrap {
+        width: 100%;
+        height: 93%;
+        background-color: #212121;
+    }
+    #inputwrap {
+        width: 100%;
+        height: 30%;
+        text-align: center;
+        background-color: #212121;
+    }
+    h1 {
+        color: #007377;
+    }
+    #i1 {
+        text-align: center;
+        background-color: #007377;
+        color: #32e0c4;
+    }
+    #i2 {
+        text-align: center;
+        background-color: #007377;
+    }
+    #i3 {
+        text-align: center;
+        background-color: #007377;
+        color: #32e0c4;
+    }
+     ::placeholder {
+        color: #32e0c4;
+    }
+    a {
+        color: #32e0c4;
+    }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 312px) {
+    html,
+    body,
+    h1 {
+        margin: 0%;
+    }
+    #pagewrap {
+        width: 100%;
+        height: 100%;
+    }
+    #navbar {
+        width: 100%;
+        height: 7%;
+        background-color: #007377;
+    }
+    #fakelink {
+        color: black;
+        width: 20%;
+        height: 96%;
+        background-color: #32e0c4;
+        text-align: center;
+        float: left;
+        border: solid black 1px;
+    }
+    #lT1 {
+        text-align: center;
+        color: #212121;
+        font-size: 90%;
+    }
+    #Summary {
+        color: #007377;
+        width: 20%;
+        height: 96%;
+        background-color: #212121;
+        float: left;
+        border: solid #eeeeee 1px;
+        text-align: center;
+    }
+    #lT2 {
+        text-align: center;
+        color: #32e0c4;
+        font-size: 90%;
+    }
+    #frontpage {
+        color: #007377;
+        width: 20%;
+        height: 96%;
+        background-color: #212121;
+        text-align: center;
+        float: left;
+        border: solid #eeeeee 1px;
+    }
+    #lT4 {
+        text-align: center;
+        color: #32e0c4;
+        font-size: 90%;
+    }
+    #contentwrap {
+        width: 100%;
+        height: 93%;
+        background-color: #212121;
+    }
+    #inputwrap {
+        width: 100%;
+        height: 30%;
+        text-align: center;
+        background-color: #212121;
+    }
+    h1 {
+        color: #007377;
+    }
+    #i1 {
+        text-align: center;
+        background-color: #007377;
+        color: #32e0c4;
+    }
+    #i2 {
+        text-align: center;
+        background-color: #007377;
+    }
+    #i3 {
+        text-align: center;
+        background-color: #007377;
+        color: #32e0c4;
+    }
+     ::placeholder {
+        color: #32e0c4;
+    }
+    a {
+        color: #32e0c4;
+    }
+    .aProjects {
+        float: left;
+    }
+}
+
+@media only screen and (max-width: 311px) {
+    html,
+    body,
+    h1 {
+        margin: 0%;
+    }
+    #pagewrap {
+        width: 100%;
+        height: 100%;
+    }
+    #navbar {
+        width: 100%;
+        height: 6%;
+        background-color: #007377;
+    }
+    #fakelink {
+        color: black;
+        width: 20%;
+        height: 96%;
+        background-color: #32e0c4;
+        text-align: center;
+        float: left;
+        border: solid black 1px;
+    }
+    #lT1 {
+        text-align: center;
+        color: #212121;
+        font-size: 80%;
+    }
+    #Summary {
+        color: #007377;
+        width: 20%;
+        height: 96%;
+        background-color: #212121;
+        float: left;
+        border: solid #eeeeee 1px;
+        text-align: center;
+    }
+    #lT2 {
+        text-align: center;
+        color: #32e0c4;
+        font-size: 80%;
+    }
+    #frontpage {
+        color: #007377;
+        width: 20%;
+        height: 96%;
+        background-color: #212121;
+        text-align: center;
+        float: left;
+        border: solid #eeeeee 1px;
+    }
+    #lT4 {
+        text-align: center;
+        color: #32e0c4;
+        font-size: 80%;
+    }
+    #contentwrap {
+        width: 100%;
+        height: 94%;
+        background-color: #212121;
+    }
+    #inputwrap {
+        width: 100%;
+        height: 30%;
+        text-align: center;
+        background-color: #212121;
+    }
+    h1 {
+        color: #007377;
+    }
+    #i1 {
+        text-align: center;
+        background-color: #007377;
+        color: #32e0c4;
+    }
+    #i2 {
+        text-align: center;
+        background-color: #007377;
+    }
+    #i3 {
+        text-align: center;
+        background-color: #007377;
+        color: #32e0c4;
+    }
+     ::placeholder {
+        color: #32e0c4;
+    }
+    a {
+        color: #32e0c4;
+    }
+    .aProjects {
+        float: left;
+    }
+    .pAText {
+        float: left;
+    }
+}

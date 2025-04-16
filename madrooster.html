@@ -1,0 +1,81 @@
+<!doctype= html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Samuli Nukala">
+    <link rel="stylesheet" href="css/stylesP.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mad rooster</title>
+</head>
+
+<body>
+    <div id="pagewrap">
+        <div id="navbar">
+            <a href="index.html" id="frontpage">
+                <p id="lT4">Frontpage </p>
+            </a>
+            <a href="summary.html" id="Summary">
+                <p id="lT2"> Projects </p>
+            </a>
+            <a href="test.html" id="fakelink">
+                <p id="lT1"> Project list
+                </p>
+            </a>
+        </div>
+        <div id="contentwrap">
+            <div id="videowrap">
+                <iframe  id="video" width="560" height="315" src="https://www.youtube.com/embed/6TbrUlcnH60" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+                    </iframe>
+            </div>
+            <div id="c1">
+                <h1> Description</h1>
+                <p> The game involves piloting a spacecraft in an arena where enemies launch missiles at the player. These missiles explode if the planes firing them are hit; after three missile hits, the planes themselves explode. Additionally, there is an invincible turret that also fires missiles. The parallax effect on the background adds a fun and engaging layer of depth. Graphics were also created for the Google Play Store page, featuring a space station. </p>
+            </div>
+            <div id="p1">
+                <img id="pic1" src="img/Screenshot%202024-04-03%20130737.png">
+            </div>
+            <div id="p2">
+                <img id="pic2" src="img/Screenshot%202024-04-03%201309222.png">
+            </div>
+            <div id="c2">
+                <h1> Features </h1>
+                <p> There are portals in the four different directions. The portals are divided into four different sections, each linking to a different portal. The enemies follow a certain flight path that they copy from the player.</p>
+            </div>
+            <div id="c3">
+                <h1> Challenges</h1>
+                <p> The biggest hurdles were in making the missiles track the player fairly and not destroy the player too fast. Also, building the game APK was quite complicated and worked randomly. The game balancing wasn’t that bad; it caused quite a bit of difficulty because the missiles are infinitely replicating. The game has an interesting quirk, which is that if you have it run on 30 fps, it looks really jarring. The solution was to make it run at 60 fps on phones, which was done through code. </p>
+            </div>
+            <div id="c4">
+                <h1> Self reflection </h1>
+                <p> In hindsight, the project lacked a bit of direction and was sort of finished and sort of not, which was apparent later in a few tests. The main problem with the game was that it didn't communicate to the player enough. In the projects that I have done since, I have thought more about how to communicate to the player about different gameplay mechanics.</p>
+            </div>
+                   The player didn’t have any way, for instance, to know that aircraft can be damaged with the missiles because the first impact didn’t show any damage to the plane. As for my part as a coder and an artist, I think I did a passable job on the assets. There is a lot of improvement to be had, but it was also my first try at drawing for a game.
+           <div id="cleft">
+               <img src="img/radar%20madrooster.png">
+                <p>
+                    <br>
+                    <br>
+                </p>
+                 <h1> Code example radar </h1>
+               <p> I think this was pretty clever way of doing the radar. it works by adding a turning on a nonprimary camera and making and getting the picture from that and putting it into a rendering texture. the other camera has a mask removeing everything except the red dots on the enemies so it only shows enemies on the render texture. I had messed with rendertextures before so i had some idea what they could be used for. </p>
+                
+            </div>
+          
+            <div id="cright">
+             <img src="img/madrooster%20linedata.png">
+                <p>
+                    <br>
+                    <br>
+                </p>
+                 <h1> Code example linedata </h1> 
+                <p> This is the line data so. It continuelly updates the position between the enemy and the player. It uses line renderers to have the line appear. There were plans to make it diffrenciate between enemy types. So it would have a different color for planes and missiles. The line renderer caused multiple problems continuesly. The main problem was that it didn't change between frames so it would not update or it wouldn't render at all.     
+                </p>
+                  <p>
+                    <br>
+                    <br>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,106 @@
+<!doctype= html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Samuli Nukala">
+    <link rel="stylesheet" href="css/stylesP.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legend of Trum'scesth</title>
+</head>
+
+<body>
+    <div id="pagewrap">
+        <div id="navbar">
+            <a href="index.html" id="frontpage">
+                <p id="lT4">Frontpage </p>
+            </a>
+            <a href="summary.html" id="Summary">
+                <p id="lT2"> Projects </p>
+            </a>
+            <a href="test.html" id="fakelink">
+                <p id="lT1"> Project list
+                </p>
+            </a>
+        </div>
+        <div id="contentwrap">
+            <div id="videowrap">
+                 <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/jI49rdb8jVM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div id="c1">
+                <h1> Description</h1>
+                <p> It's an adventure game where you battle against swamp monsters. However, it never progressed beyond the demo stage of development. Game development came to a halt when the lead developer relocated to a different school, and the project ultimately fell apart during the summer vacation </p>
+            </div>
+            <div id="p1">
+                <img id="pic1" src="img/trumcesth1.png">
+            </div>
+            <div id="p2">
+                <img id="pic2" src="img/trumcesth2.png">
+            </div>
+            <div id="c2">
+                <h1> Features </h1>
+                <p> There was an environment, but it was never put in the game. There was a modeled character, but it didn't have implemented animations yet. The animations were made. There was an AI enemy that could patrol a route and go after the player, and could take turns with other enemies to attack the player. It could also block and attack according to the player's intention. The player could block and attack. Enemies and the player could take damage. There was work on the UI system that had tabs, and you could pause the game. The enemies' patrol route was formed by Bézier curves. The game did have simple quests for killing enemies, but making the quest generate automatically didn't get finished. The player could dodge enemy attacks. Enemies would fade away when they were killed. The quest screen did have descriptions about the quests. There was a sprint for the player, and you could jump on boxes. There was a custom editor for the quests in Unity. I was in charge of the coding on the project. I did basically everything that is on the video except for the enemy model. This is basically a video from my test sandbox. The hardest thing was making the enemy controller because I made the enemies be able to block attacks, attack, dodge player attacks, park around the player, and take turns attacking. The AI was made in a giant if-else statement mess. In hindsight, I would change it to use an enum state machine, but I feel that I always learn the most useful stuff after doing this wrong and having finished projects
+            </div>
+			<div id="c3">
+                <h1> Challenges</h1>
+                <p> The problems mainly stemmed from the fact that I had never done a 3D RPG-type of game. I had to think quite a bit about how to do things, and in hindsight, many things could have been better. For instance, the enemy AI could have used a state machine for handling actions. One of the hardest things was making the enemies attack in unison, having them take turns fighting the player and coordinating with other enemies. How I did it was ugly. I used a lot of 'if' statements that formed different states where the code could run. One of the things that could be improved would be to change where the jump physics are calculated because they are currently calculated in the 'Update' method and not in the 'FixedUpdate' method, which causes the physics to change with screen size. </p>
+            </div>
+                                                                           
+            <div id="c4">
+                <h1> Self reflection </h1>
+                <p>
+                 It could have been a good game, but it was ended prematurely. I did learn a lot about how RPG games are made, and it was different compared to many games I did and have done since. The project, for me, was fun because at the start of the project, I had worked on the same types of projects a lot. I hadn't done a 3D project in Unity. I could have done many things differently, but I am proud that I used what I learned in a course to create the Bézier curve patrol route.  </p>
+            </div>
+           
+            <div id="c6">
+                <h1> Credits </h1>
+                <p> Vikke Kainuulainen (model) </p>
+             
+                <p> Veera Parcheli (enviroment) </p>
+               
+                <p> Otto Asikainen (animation)</p>
+                
+                <p> Ida Rask (ui)</p>
+               
+                <p>Samuli Nukala (coding)</p>
+                <p>
+                 <br>
+                <br>
+                <br> 
+                    <br>
+                <br>
+                <br>
+                </p>
+            </div>
+            <div id="cleft">
+                 <br>
+                <br>
+                <br>
+               <img src="img/seikkailu%20code%20enemy.png">
+                <p>
+                    <br>
+                    <br>
+                </p>
+                 <h1> code example enemy ai</h1>
+               <p> This was quite fun to make. The enemy AI is quite simple. It has a patrol route that is made with Bézier curves on the board. When the player is a certain distance from the enemy, the enemy starts chasing them. If the player escapes, the enemy goes back to the patrol route. Movement is done with a NavMesh agent. The AI operates with a kind of state machine. In combat, it performs actions randomly. It defends when the player gets closer and lunges when the player moves farther away. The enemies gang up on the player by gathering around and then taking turns attacking. It was quite fun to think about how to make that work. I did it by having parking places that were targeted by the NavMesh agent and maintaining a list of players within the collider. </p>
+                
+            </div>
+          
+            <div id="cright">
+             <img src="img/seikkailu%20code%20player.png">
+                <p>
+                    <br>
+                    <br>
+                </p>
+                 <h1> code example player </h1> 
+                <p>Player code is quite similar to the enemy code, but it was much easier to make since the user does the thinking. I would improve the jumping by putting it in FixedUpdate, since having it in the Update function makes the computer's performance affect how high you can jump. The faster the computer, the less you can jump. This was my first attempt at making a 'deep' combat system, and it didn't go that well, to be honest. If this project didn't end, I would have probably thrown out the whole thing and started again at some point.
+                              
+                </p>
+                  <p>
+                    <br>
+                    <br>
+                </p>
+            </div>
+        
+    </div>
+</body>

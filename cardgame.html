@@ -1,0 +1,127 @@
+<!doctype= html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author" content="Samuli Nukala">
+    <link rel="stylesheet" href="css/stylesP.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>card game wip</title>
+</head>
+
+<body>
+    <div id="pagewrap">
+        <div id="navbar">
+            <a href="index.html" id="frontpage">
+                <p id="lT4">Frontpage </p>
+            </a>
+            <a href="summary.html" id="Summary">
+                <p id="lT2"> Projects </p>
+            </a>
+            <a href="test.html" id="fakelink">
+                <p id="lT1"> Project list
+                </p>
+               
+            </a>
+        </div>
+        <div id="contentwrap">
+            <div id="videowrap">
+             
+                <iframe id="video" src="https://www.youtube.com/embed/W1-unCbJ85I?si=ez4V_XuyjXDBhMT7" frameborder="0" allow="accelerometer;  clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+                    </iframe>
+            </div>
+            <div id="c1">
+                <h1> Description</h1>
+                <p> Cardgame is a game that is losely based on cardgame called nälkä. in that Game two opponents have decks that go thorugh and one looses when they lose all cards. i expanded consept by having two card hand and having powerups. In the pictures are some assets that i have drawn for the game. The two similar characters that have lumps are on their heads are the same character but i improved the line art and the result is quite clear which is better.
+                    Currently the project is in need of finishing touches. it has four powerups and the enemy ai can use two of those. The target audience was players who like card games that are unique. Project wasn't that planned it was just started to be made and the game design was done at the same time. Many of the assets were sketched in a notebook. the game olay was developed during testing and same for the rules. </p>
+            </div>
+            <div id="p1">
+                <img id="pic1" src="img/card%20game%20art%202.png">
+            </div>
+            <div id="p2">
+                <img id="pic2" src="img/cardagame%20art%201.png">
+            </div>
+            <div id="c2">
+                <h1> Features </h1>
+                <p> Enemy player that can hit cards to the player and use powerus to try to win against them. The game has a turn indicator which shows whose turn is it.each player has a 
+                    deck and four powerups. steal powerup allows the player to steal one card on the table. 
+                    sacrfice allows the player to get the smallest card within next five cards so it can sometimes be detrimental. encore locks the turn to the opposing player so 
+                   the turn doesn't change to whoever last got the card. choose power up allows the player to choose any card from their deck at the time of writing it still has bugs. 
+                In the game the player hits one card and waits for the ai to hit cards too.
+                    the turn based ai was one of the places where most of the time programming was spent. 
+                    the difficulty was making the ai use the same methods as the player and be able to make decions about using power ups. 
+                    In particular having the ai make decisions while the cards clash with each other was hard. The ai had a difficulty slider that made it less random and increased its perfect stragedy percentage but in effect the difficulty had to be all the way up in order for the game to be more challenge. 
+                    The power ups were also hard to make since they had to interrupt the normal turnbased nature of the game. There were four types of power ups. 
+                    Choose power up allowed the player to look at all of their cards and choose the one they want. Sacrifice power up chose the smallest card with in the next 4 cards. 
+                    steal card allows the player to steal the card that is on the table and advances the turn to the next player. 
+                    encore allowed the player to force the other player to play another card.  
+</p>
+                <br>
+                 <br>
+                 <br>
+                 <br>
+                 <br>
+                 <br>
+                 <br>
+                 <br>
+                 <br>
+                 <br>
+                
+            </div>
+            <div id="c3">
+                 <br>
+                 <br>
+                 <br>
+                 <br>
+                <h1> Challenges</h1>
+                <p> Some of the time spent on creating assets has been in essence wasted because the assets that were produced were not up to my quality.
+                    The ai had lots of problems and continues to be a difficult system because it needs use powerups at the correct time and at current time cant ever win against a skilled player 
+                    even though the game should be largely luck based.  
+                    during the drawing process changing to different template caused the resolutions to be different all over the place. 
+                    The backgrounds were easier to draw since there were many tools to make the symmetrical lines. Then that was copied again and a again. 
+                    The turn based gameplay had a problem where the turns were in the wrong order. the solution was to add a lot of checks to make sure the turns progressed correctly. 
+                    The gamemanager has three Boolean values that decide in what state the turn is. powerups caused problems because it changed these Booleans. 
+                    The solutions was to add checks to the powerup script. One of the hardest things was to add checks to power ups to make sure it doesn't trigger if 
+                    it shouldn't trigger. No sources were used since it was just fixing different booleans and making sure the turns are in correct order. 
+                    getting the cards to render pictures had some difficulties. the problem was mostly because the card renderer needed to show both the name of the card and the 
+                    picture of the card. the problem was solved by making a scriptable object that had all of the sprites divided by the suits. the main problem came from the 
+                    fact that only four cards of a suit had the sprite. this caused prblems because cards had a bigger enum-value than four. the solution was to hard code the values to 
+                    eflect a certain value so for instance 12 was equal to ace-card. no sources used because it was mostly about figuring out how to pair sprites with lists. 
+</p>
+            </div>
+            <div id="c4">
+                <h1> Self reflection </h1>
+                <p> it's a work in progress but so far it has been fun to do and this is currently the minimum viable product.
+                The largest learning experience was on drawing assets. Assets in particular caused a lot of problems because they were in different resolutions.
+                    the next time drawing assets i will make sur that the same teplate gets used throughout the process. Because there was a large gap between updates my drawing style had changed and the later cards stand out a bit.
+                    
+                </p>
+            </div>
+             <div id="cleft">
+               <img src="img/forceTurnPowerup.png">
+                <p>
+                    <br>
+                    <br>
+                </p>
+                 <h1> Code example power up </h1>
+               <p> In this picture there is the powerup that is currently named encore. This was first project that i really managed to make use of inheritance. while making theese powerups you basically just have to place them. The powerup uses the two methods that are defined in the base class and overides them so all the powerups can be called easily from a list. i got a lot of modular code done in this game.</p>
+                
+            </div>
+          
+            <div id="cright">
+             <img src="img/choose%20powerup.png">
+                <p>
+                    <br>
+                    <br>
+                </p>
+                 <h1> Code example enemy ai choosing a powerup </h1> 
+                <p> This choosing mechanic is done quite sloppypily but for now it it is implemented to the best of my ability.in the future if balance i will make it to be able to configured in unitys inspector but for now it stays like this for example the limit on when the enemy hits certain cards is done in a way that configures a list. 
+                </p>
+                  <p>
+                    <br>
+                    <br>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
